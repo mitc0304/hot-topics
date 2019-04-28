@@ -1,0 +1,191 @@
+/* DEFAULT STYLES */
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.image {
+    margin: auto;
+    width: 80%;
+    display: block;
+}
+
+img {
+    width: 80%;
+    max-width: 400px;
+}
+
+/* HEADER */
+.logo {
+    text-align: center;
+    background-image;
+    max-width: 400px;
+}
+
+.portImages {
+    width: 120%;
+    margin: auto;
+}
+
+figcaption {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px;
+}
+
+/* NAV */
+ul {
+    list-style-type: none;
+    margin: 20px 0 20px 0;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    display: block;
+    text-decoration: none;
+    background-color: pink;
+    width: 80%;
+    margin: auto;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+li a {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: pink;
+    padding: 0 45px 0 45px;
+}
+
+.tagline {
+    border: 1px solid green;
+    text-align: center;
+    margin: 5px auto;
+}
+
+/* BODY */
+
+h2 {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: pink;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.item {
+    height: 300px;
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+/* MOBILE STYLES */
+
+@media all and (max-width: 34rem) {
+    
+    .tagline {
+        visibility: hidden;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .item {
+        margin: 10px auto;
+    }
+    
+    .text {
+        margin: 55px 30px 30px 30px;
+        line-height: 1.1rem;
+    }
+    
+}
+
+/* TABLET VIEW */
+
+@media all and (min-width: 35rem) {
+    
+    li {
+        display: inline;
+        padding: 10px 80px 10px 80px;
+    }
+    
+    .tagline {
+        margin: 20px auto;
+    }
+    
+    main {
+        margin: 2rem;
+    }
+    
+    h2 {
+        margin-top: 1rem;
+    }
+    
+    .item {
+        margin: 10px auto;
+    }
+    
+    .image {
+        height: 150px;
+        width: 150px;
+        float: left;
+        margin-right: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .text {
+        margin-bottom: 2rem;
+        line-height: 1rem;
+    }
+}
+
+/* DESKTOP VIEW */
+
+@media all and (min-width: 80rem) {
+    
+    header, body {
+        margin: 20px 120px;
+    }
+    
+    li {
+        width: 50%;
+    }
+    
+    
+    main {
+        margin: 5rem 3rem;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    
+    h2 {
+        text-align: left;
+    }
+    
+    .image {
+        margin-right: 2rem;
+    }
+    
+    .text {
+        overflow: hidden;
+        margin-bottom: 3rem;
+        line-height: 1.25rem;
+    }
+}
